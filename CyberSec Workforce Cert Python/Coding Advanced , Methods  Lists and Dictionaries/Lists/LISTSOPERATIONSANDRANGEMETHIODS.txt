@@ -1,0 +1,36 @@
+List Operations
+
+As with strings, the + operator concatenates lists and the * operator repeats a list a given number of times
+
+EXAMPLE:
+
+>>> east_rooms = [101, 102, 103, 104]
+>>> west_rooms = [105, 106, 107, 108]
+>>> all_rooms = east_rooms + west_rooms
+>>> print(all_rooms)
+[101, 102, 103, 104, 105, 106, 107, 108]
+The * operator is often used to initialize a list with starting values, such as initializing a list of counters to zero:
+
+>>> counters = [0] * 5
+>>> print(counters)
+[0, 0, 0, 0, 0]
+If you simply want to add additional elements onto an existing list, you may use the += operator
+
+Since lists are mutable, this will alter the list on the left side of the operator
+Note, however, that the expression on the right side of the operator must be iterable
+Consider:
+
+Correct Code:
+
+>>> room_numbers = []
+>>> for num in range(101, 109):
+        room_numbers += [num] 
+>>> print(room_numbers)
+[101, 102, 103, 104, 105, 106, 107, 108]
+Incorrect Code:
+
+>>> room_numbers = []
+>>> for num in range(101, 109):
+        room_numbers += num
+Traceback (most recent call last):
+TypeError: 'int' object is not iterable
