@@ -1,0 +1,48 @@
+Arithmetic Operators
+
+The expression 2 + 3 + 7 uses the arithmetic operator +
+
+Other operators we may use in Python expressions are:
+
+  -     the minus operator
+
+  *    the multiplication operator
+
+  /     the division operator
+
+  //   another division operator (what’s the difference?
+
+  %   the mod operator (remaindering operator)
+
+  **  the exponentiation operator
+
+
+---------------------------------------------------------------
+
+Scripts Involving Arithmetic Expressions
+
+Consider the screenshot shown below
+
+Each expression typed leads to the result shown on the line below it
+Note that 8 / 3 yields a result with the decimal part and 8 // 3 yields an integer result
+Also, 8 / 2 yields 4.0 as opposed to 4 because of / as opposed to //
+13 % 5 yields the remainder when 13 is divided by 5
+2**3 calculates 23 (Exponentiation) [Python uses ^ for something else]
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+Data Types and Values
+
+A value is a letter, number, or a string
+
+2, 2.466, ‘Hello Python!’ are examples of values
+
+Each value is of a specific data type
+
+2 is an integer (int)
+2.466 is a floating-point number (float)
+‘Hello Python!’ is a string (str)
+The term “class” is used by Python to identify the category of data being defined by the value.  

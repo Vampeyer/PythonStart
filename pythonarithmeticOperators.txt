@@ -1,0 +1,33 @@
+Arithmetic Operators
+
+The expression 2 + 3 + 7 uses the arithmetic operator +
+
+Other operators we may use in Python expressions are:
+
+  -     the minus operator
+
+  *    the multiplication operator
+
+  /     the division operator
+
+  //   another division operator (what’s the difference?
+
+  %   the mod operator (remaindering operator)
+
+  **  the exponentiation operator
+
+
+---------------------------------------------------------------
+
+Scripts Involving Arithmetic Expressions
+
+Consider the screenshot shown below
+
+Each expression typed leads to the result shown on the line below it
+Note that 8 / 3 yields a result with the decimal part and 8 // 3 yields an integer result
+Also, 8 / 2 yields 4.0 as opposed to 4 because of / as opposed to //
+13 % 5 yields the remainder when 13 is divided by 5
+2**3 calculates 23 (Exponentiation) [Python uses ^ for something else]
+
+
+

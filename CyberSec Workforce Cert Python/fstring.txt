@@ -1,0 +1,10 @@
+Example -  Consider the following example, solved with and without an f-string:
+
+>>> name = 'Mary'
+>>> age = 37
+>>> print(name + ' is ' + str(age) + ' years old.')
+Mary is 37 years old.
+
+>>> print(f'{name} is {age} years old.')
+Mary is 37 years old.
+Note how the f-string avoids the need to concatenate the string and use the string constructor to convert the numeric variable to a string when printing

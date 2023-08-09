@@ -1,0 +1,27 @@
+Python provides functions that allow you to go back and forth between the string representation of a character and the numeric value that encodes it
+
+
+
+Function ord takes a string with one character and returns the Unicode value used to encode it
+Function chr goes in the other direction – given an integer Unicode value, the function returns the string it represents
+For example, we previously observed that 'apple' > 'BANANA', so:
+
+
+
+>>> ord('a')
+
+97
+
+>>> ord('B')
+
+66
+
+
+
+
+
+>>> chr(97)
+'a'
+
+>>> chr(66)
+'B'

@@ -1,0 +1,105 @@
+String methods that search for substrings
+
+
+
+You may need to search a string to see if it contains a particular sequence of characters, known as substring, or at which index the substring begins, or even how many times a substring may occur.  Python provides methods (or operators) for each of these scenarios
+
+
+
+The simplest search for a substring is simply to find out if it is present in the tested string – Python's in operator does this.  
+
+
+
+The keyword in is a boolean operator that takes two strings and returns True if the first appears as a substring in the second and False otherwise:
+
+
+ >>> 'a' in 'banana'
+
+True
+
+>>> 'seed' in 'banana'
+
+False
+
+
+
+See: https://docs.python.org/3/library/stdtypes.html#typesseq-common
+
+
+
+Note: not in returns the opposite of in
+
+
+
+To find the first index in a string where a specified substring may be found, use Python's string method find
+
+If the substring is not present, the method will return -1
+In addition to specifying the substring to be found, the method can also accept start and end indices that will limit the search to the [start:end] slice of the string
+EXAMPLE:
+
+>>> s = 'banana'
+>>> s.find('an')
+1
+>>> s.find('na')
+2
+>>> s.find('ab')
+-1
+>>> s.find('an',2,6)
+ 3
+
+
+
+See: https://docs.python.org/3/library/stdtypes.html#str.find
+
+
+
+Method index works just as find except when the substring is not present, it produces a ValueError instead of simply returning -1.  Methods rfind and rindex work 
+
+
+
+To count the number of non-overlapping occurrences of a substring in a string, use Python's string method count
+
+If the substring is not present, the method will return 0
+In addition to specifying the substring to be counted, the method can also accept start and end indices that will limit the search to the [start:end] slice of the string
+EXAMPLE:
+
+>>> s = 'banana'
+>>> s.count('an')
+2
+>>> s.count('ana')
+1
+>>> s.count('ab')
+ 0
+
+
+
+See: https://docs.python.org/3/library/stdtypes.html#str.count
+
+Note: In this example, s.count('ana') returns 1 because the 'ana' at the end of 'banana' overlaps the first occurrence and count only considers non-overlapping occurrences.
+
+JdGCVfvSC1QU12dI-Picture6.png
+Knowledge Check
+
+Given the following string:
+Picture7.png
+Given the following string:
+
+s = 'Hello World'
+
+What will s.find('lo') produce?
+
+===========================================================
+
+
+===========
+For integer values, the d presentation type may be used to format values
+
+The presentation types b, o, x or X can be used to format integer output using binary, octal, and hexadecimal number systems
+
+Consider formatting an inventory report:
+
+>>> part = 'Hammer'
+>>> quantity = 10
+>>> price = 11.5
+>>> print(f'{part:10} : {quantity:3d} @ ${price:.2f}')
+Hammer     :  10 @ $11.50

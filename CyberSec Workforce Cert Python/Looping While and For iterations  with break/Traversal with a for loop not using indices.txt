@@ -1,0 +1,15 @@
+Traversal with a for loop not using indices
+
+A for loop can also be used to directly traverse the characters in a string without specifying the indices needed
+
+Since all strings start at index [0] and all know their own length, it isn't necessary to specify these when traversing a string with a for loop
+EXAMPLE: the following code fragment prints each character of the string on a separate line without specifying any indices
+
+>>>   s = 'Hello'
+>>>  for letter in s:
+          print(letter)
+H
+e
+l
+l
+o

@@ -1,0 +1,14 @@
+Traversal with a for loop using indices
+
+You can easily loop through the indices associated with the characters of a string using a for loop and the range function
+
+For example, the following code fragment prints each character of the string on a separate line
+
+>>> s = 'Hello'
+>>> for index in range(len(s)):
+>>>    print(s[index])
+H
+e
+l
+l
+o

@@ -1,0 +1,156 @@
+Conditionals and Recursion
+
+
+bullet
+Boolean expressions (True/False)
+
+
+bullet
+Logical operators (And/Or/Not)
+
+
+bullet
+Conditional Execution (The if Statement)
+
+
+bullet
+Alternative Execution (The if..else Statement)
+
+
+bullet
+Chained execution (The if..else..if Statement)
+
+
+bullet
+Nested Conditionals
+
+The following sections will go into detail about each.
+
+Boolean Expressions
+
+A Boolean expression is an expression that is either true or false.
+Often based on comparison operands such as <, >, ==, !=….
+The following examples use the operator ==, which compares two operands and produces True if they are equal and False otherwise:
+Examples of "is equal"
+
+5 == 5
+True
+
+5 == 6
+False
+The first expression is equivalent to asking: Is 5 equal to 5?, which is the case. Thus, the answer is True.
+
+The second expression is equivalent to asking: Is 5 equal to 6?. In this case the answer is False
+
+True and False are special values that belong to the type bool.
+
+bool is short for Boolean type which is a programming language type that can have one of two possible states, it is either True or it is False.
+
+Continued
+Relational Operators
+
+Relational operators are binary operators that compare two operands and they always evaluate to a bool, i.e. their answer is always either true of false.
+
+The == operators is one of these relational operators.
+
+Examples of "is less than" and "is greater than"
+
+6 <= 8
+True
+
+9 >= 21
+False
+The other relational operators are given in the following table 
+
+x == y	# x is equal to y 
+x != y	# x is not equal to y 
+x > y
+# x is greater than y
+x < y
+# x is less than y
+x >= y
+# x is greater than or equal to y
+x <= y
+# x is less than or equal to y  
+Common Errors in Relational Operators
+
+common error to use one = symbol in stead of two == for the ”is equal”.
+there is no =< or => symbols.
+Continued
+Logical Operators
+
+To form and evaluate Boolean expressions we use logical operators.
+
+There are three logical operators: and, or, and not.
+
+The semantics (meaning) of these operators is similar to their meaning in English.
+
+Example 1:
+
+The expression  x > 0 and x < 10  
+
+is true only if x is greater than 0 and less than 10, that is strictly between 0 and 10.
+
+Example 2:
+
+The expression  
+
+n%2 == 0 or n%3 == 0 
+
+is true if either n is divisible by 2 or if n is divisible by 3
+
+Continued
+Conditional Execution
+
+In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. 
+
+Conditional statements give us this ability.
+
+The simplest form is the if statement: Example of simple if conditional illustrating "Conditional execution"
+
+The general form of the if statement is:
+
+if (condition):   Do the following statement(s)
+
+x = 21
+if x > 0: 
+  print('x is positive')
+  
+x is positive
+The Boolean expression after an if is called the condition
+
+If the condition is true, then the body (indented section of code) will run.
+If the condition is false, nothing happens.
+Please note that the indentation is important, and we must indent all the statements in the body that need to be run if the condition is true. Statements like this are called compound statements.
+There is no limit on the number of statements that can appear in the body, but there must be at least one.
+
+Occasionally, it is useful to have a body with no statements (usually as a place keeper for code you haven’t written yet). In that case, you can use the pass statement, which does nothing.
+
+if x < 0:
+         pass
+
+Integer Comparison Example
+
+Write a script that will find the largest of three numbers by comparing them to each other.  
+
+In the script you should: 
+
+Ask the user for 3 integers: a, b, c
+Compare each integer to the other two
+Print which number is the largest
+Example of multiple if statements to determine the largest:
+
+a = int(input("Enter a? "))
+b = int(input("Enter b? "))
+c = int(input("Enter c? "))
+if a > b and a > c:
+    print("a is largest")
+if b > a and b > c:
+    print("b is largest")
+if c > a and c > b:
+    print("c is largest")
+
+  Enter a? 6
+  Enter b? 9
+  Enter c? 3
+  b is largest

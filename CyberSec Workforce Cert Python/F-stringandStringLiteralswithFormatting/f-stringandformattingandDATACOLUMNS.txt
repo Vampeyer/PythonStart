@@ -1,0 +1,44 @@
+String Formatting
+
+Python provides several ways to create strings that precisely control the appearance of values
+ of variables and expressions being printed.  Since Python 3.6, the preferred way to perform such 
+ formatting of output is with formatted string literals or f-strings
+
+An f-string is a string literal that is prefixed with the letter f and contains replacement 
+fields delimited by curly braces {}
+
+Variables and expressions inside the curly braces will be evaluated at runtime and replaced by 
+their values
+These replacement field expressions may be followed by a format specifier introduced by a :
+The parts of the f-string outside the curly braces will be treated as usual in string literals
+ (except that double curly braces {{ or }} are replaced with the corresponding single curly brace)
+
+See: https://docs.python.org/3/reference/lexical_analysis.html#f-strings and
+ https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals
+
+Example -  Consider the following example, solved with and without an f-string:
+
+>>> name = 'Mary'
+>>> age = 37
+>>> print(name + ' is ' + str(age) + ' years old.')
+Mary is 37 years old.
+
+>>> print(f'{name} is {age} years old.')
+Mary is 37 years old.
+Note how the f-string avoids the need to concatenate the string and use the string constructor to
+ convert the numeric variable to a string when printing
+
+See: https://docs.python.org/3/reference/lexical_analysis.html#f-strings and https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals
+
+You can control the formatting of the replacement field expressions by using a format specifier that 
+dictates how the expression will be formatted
+
+The format specifier can dictate a minimum width for the field so as you might want when creating
+ columns in multi-line output
+
+This width is specified immediately after the : that follows the expression
+
+EXAMPLE: if you wanted a report with a column for first names and a column for last names, each 10 
+characters wide, you might write:
+
+print(f'{f_name:10} {l_name:10}')
