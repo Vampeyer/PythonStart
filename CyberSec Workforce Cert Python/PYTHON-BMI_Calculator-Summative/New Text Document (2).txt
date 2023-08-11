@@ -1,0 +1,31 @@
+Coding Summative Assessment Summary 
+
+BMI Calculator based on height and weight. 
+patient gets a patientID. 
+
+!. prompt the user repeatedly to enter a patient identification number as a 
+int  , a patient name , a patient height , and a weight in pounds. 
+
+Check for validity  of input for height and weight , 
+ with a error prompt otherwise 
+ 
+ 2. calculate and display BMI 
+ -BMI = w / (h * h) * 703 
+ 
+ 3. for each patients information entered , categorize the patient according 
+ ot the following table 
+ 
+   BMI            Category
+ less than 18.5 - underweight
+ 18.5-25.-        healthy 
+ 25-30   -        Overweight 
+ >30 -            Obese 
+ 
+ 
+ 4. For each patient entered , list ID, 
+ use f strings preferred. 
+ 
+ 5. Nest logic in a while loop , while loop with id will be sentinal control. 
+ 
+ 
+ 6. - maybe display a table . 
