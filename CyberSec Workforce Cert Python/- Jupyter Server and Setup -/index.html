@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> RafflePay </title>
+  <link rel="icon" href="/Main.png" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Raffle Ticket Site </title>
+  <!-- KEEP THIS V so borders work properly on the Table! Under Search! --->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">--->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body id=>
+  <div class="mytabs">
+    <input type="radio" id="tabsettings" name="mytabs" checked="checked">
+    <label class="labelsClass" for="tabsettings"><b>Account</b></label>
+    <div class="tab">
+
+
+      <h2 class="mainTitle">Account</h2>
+      <!-- Floating Raffle Images   -->
+      <span>
+        <img class="rafflePik" src=raffletik3d.jpg.png </span>
+        <img class="rafflePik2" src="/raffletik3d2.png" alt="picture test ">
+        <span>
+
+
+        </span>
+        <img class="rafflePik4" src="/raffletik3d4.png" alt="picture test ">
+        <span>
+
+        </span>
+        <img class="rafflePik5" src="/raffletik3d5.png" alt="picture test ">
+        <span>
+          <!--  End of images  -->
+
+
+          <p>Here you will configure User Settings</p>
+
+          <p>Public Username: <input type="text" id="TicketAmountInput" name="CustomAmount"></input></p>
+
+          <p>Wallet Address: <input type="text" id="settingWalletAddress" name="settingsWalletAddress"></input></p>
+
+          <p>Payout Chain: <select id="RaffleChain" name="RaffleChain" form="RaffleChainform">
+              <option value="arbitrum">Arbitrum</option>
+              <option value="avalanche">Avalanche</option>
+              <option value="binance">Binance</option>
+              <option value="ethereum">Ethereum</option>
+              <option value="fantom">Fantom</option>
+              <option value="optimism">Optimism</option>
+              <option value="polygon">Polygon</option>
+              <option value="xdai">xDai</option>
+            </select></p>
+          <p>Payout Type: <select id="RaffleChain" name="RaffleChain" form="RaffleChainform">
+              <option value="ape">APE</option>
+              <option value="btc">BTC</option>
+              <option value="bch">BCH</option>
+              <option value="dai">DAI</option>
+              <option value="doge">DOGE</option>
+              <option value="eth">ETH</option>
+              <option value="ltc">LTC</option>
+              <option value="matic">MATIC</option>
+              <option value="shib">SHIB</option>
+              <option value="usdt">USDT</option>
+              <option value="usdc">USDC</option>
+            </select></p>
+          <p><button id="settingsubmitbutton" class="submitRaffle">Submit</button></p>
+    </div>
+
+    <input type="radio" id="tabenter" name="mytabs">
+    <label for="tabenter"><b>Enter</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Enter</h2>
+
+      <!-- Floating Raffle Images   -->
+      <span> there will be an image
+        <img class="rafflePik" src="/raffletik3d.jpg.png" alt="picture test ">
+
+      </span>
+
+      </span>
+      <img class="rafflePik2" src="/raffletik3d2.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik3" src="/raffletik3d3.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik4" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik5" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+        <!--  End of images  -->
+
+        <div class="tabcontainer" id="enterContainer">
+          <p style="color: white">Here You will Choose which Raffle you want to Enter!</p>
+          <p style="color: white">Raffle Chain: <select id="RaffleChain" name="RaffleChain" form="RaffleChainform">
+              <option value="johns">John's</option>
+              <option value="jays">Jay's</option>
+              <option value="jeremys">Jeremy's</option>
+              <option value="cyrus">Cyrus's</option>
+            </select></p>
+          <p id="TicketAmountPlaceHolder" style="color: white" name="OG">Ticket Amount: <select id="TicketAmount"
+              name="TicketAmount" form="TicketAmountform">
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="Custom">Custom</option>
+            </select></p>
+          <p id="CustomInputBox" class="CustomInput"></p>
+          <p style="color: white">Raffle Type: <select id="RaffleType" name="RaffleType" form="RaffleTypeform">
+              <option value="1">$1</option>
+              <option value="2">$2</option>
+              <option value="4">$4</option>
+              <option value="8">$8</option>
+            </select></p>
+          <p style="color: white">Here You will Choose which Raffle you want to Enter!</p>
+          <p id="URLDisplay" style="color: white">Here we display url you click!</p>
+          <p style="text-align:center;"><button id="firstsubmitbutton" class="submitRaffle">Submit</button></p>
+        </div>
+    </div>
+
+    <input type="radio" id="tabcreate" name="mytabs">
+    <label for="tabcreate"><b>Create</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Create a Raffle Chain</h2>
+      <!-- Floating Raffle Images   -->
+      <span> there will be an image
+        <img class="rafflePik" src="/raffletik3d.jpg.png" alt="picture test ">
+
+      </span>
+
+      </span>
+      <img class="rafflePik2" src="/raffletik3d2.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik3" src="/raffletik3d3.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik4" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik5" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+        <!--  End of images  -->
+
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+    </div>
+
+    <input type="radio" id="tabtop100" name="mytabs">
+    <label for="tabtop100"><b>Top 100</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Top Payouts and Current Jackpots</h2>
+      <!-- Floating Raffle Images   -->
+      <span> there will be an image
+        <img class="rafflePik" src="/raffletik3d.jpg.png" alt="picture test ">
+
+      </span>
+
+      </span>
+      <img class="rafflePik2" src="/raffletik3d2.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik3" src="/raffletik3d3.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik4" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik5" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+        <!--  End of images  -->a
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+    </div>
+
+
+    <input type="radio" id="tabsearch" name="mytabs">
+    <label for="tabsearch"><b>Search</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Entry Lookup</h2>
+      <span> there will be an image
+        <img class="rafflePik" src="/raffletik3d.jpg.png" alt="picture test ">
+
+
+        <!-- Floating Raffle Images   -->
+      </span>
+      <img class="rafflePik2" src="/raffletik3d2.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik3" src="/raffletik3d3.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik4" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+      </span>
+      <img class="rafflePik5" src="/raffletik3d4.png" alt="picture test ">
+      <span>
+
+        <!--  End of images  -->
+      </span>
+      <div class="container mt-3" style="background: #464652">
+        <table class="table table-bordered" style="color: white">
+          <thead>
+            <tr style="color: white">
+              <th>Raffle</th>
+              <th>Type</th>
+              <th>Entries</th>
+              <th>Jackpot</th>
+            </tr>
+          </thead>
+          <tbody id="thetable">
+            <tr>
+              <td id="date1">TEst</td>
+              <td id="areaName1">Blah</td>
+              <td id="latestBy1">Blah</td>
+              <td id="deathNew1">Blah</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><button id="additembutton">Add Item</button><button id="addrowbutton">Add Row</button></p>
+        <ul id="thelist">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p class="footerClass">
+
+    </span>
+    <img class="rafflePik3" src="/raffletik3d3.png" alt="picture test ">
+    <span>
+      &copy; &reg;2023 RafflePal LLC.
+  </p>
+  <div style="display: flex; justify-content: center; padding-bottom: 1rem;"><img class="mainPic" src="Main.png"
+      alt="RafflePay Logo - do you feel lucky punk ? "></div>
+  <span style="display:flex; justify-content: center;">
+    &rightharpoonup;
+    &CupCap; &angmsdaa;
+  </span>
+
+</footer>
+
+</html>

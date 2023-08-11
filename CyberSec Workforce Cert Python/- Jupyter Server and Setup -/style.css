@@ -1,0 +1,511 @@
+html, body {
+  height: auto;
+ 
+}
+
+html::-webkit-scrollbar{
+  display: none;
+}
+
+.submitRaffle {
+  margin: 10px;
+  -ms-flex-align: center;
+}
+
+.testDiv{
+  display: flex;
+}
+
+.table{
+  align-items: center;
+  width:100%;
+  margin-bottom:1rem;
+  color:#212529;
+  vertical-align:top;
+  border-color:#dee2e6;
+  text-align: center;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+
+.tab {
+  box-shadow: 4px 4px 6px 10px  #a56ee7;
+  border: #531a99 inset 2.5px;
+  margin:7px;
+  padding: 5px;
+  padding-top: -6px;
+  padding-left:12px;
+  color:white;
+}
+
+.tabcontainerhidden{
+  display: none;
+}
+
+.table {
+	border: 0px;
+}
+
+.enterTab{
+ border: inset 0.2em rgb(0, 0, 0);
+  border-radius: 35%;
+  padding: 3px;
+  box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+  font-family: "Demo" ,Arial, Helvetica, sans-serif;
+  
+}
+.mainTitle{
+  padding-top: 2%;
+  padding-bottom: 1%;
+  text-align: center;
+  font-family: "Demo" ,Arial, Helvetica, sans-serif;
+  text-shadow:  0 0 2px red, 0 0 5px rgba(184, 4, 255, 0.966)
+}
+
+.createChain{
+ border: inset 0.2em rgb(0, 0, 0);
+  border-radius: 35%;
+  padding: 3px;
+  box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+   font-family: "Demo" ,Arial, Helvetica, sans-serif
+}
+
+.settingsTab{
+	border: inset 0.2em rgb(0, 0, 0);
+	border-radius: 35%;
+	padding: 3px;
+	box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+	font-family: "Demo" ,Arial, Helvetica, sans-serif
+}
+
+.searchTab {
+	border: inset 0.2em rgb(0, 0, 0);
+	border-radius: 35%;
+	padding: 3px;
+	box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+	font-family: "Demo" ,Arial, Helvetica, sans-serif
+}
+
+/*  General / body CSS  */ 
+
+  body {
+	background: #464652;
+	font-family: 'Roboto', sans-serif;
+  }
+
+  .mytabs {
+    display: flex;
+    flex-direction: column;
+    
+	  width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+  }
+
+  .tab p {
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .tab ul {
+    text-align: center;
+  }
+  
+  .tab .CustomInput{
+    padding-top: 0px;
+  }
+
+  .mytabs input[type="radio"] {
+    display: none;
+    flex-wrap: wrap;
+  }
+
+  label {
+    color:rgb(0, 0, 0);
+    padding-top: 8px;
+    background: #363845;
+    
+    height: 40px;
+	  text-align: center;
+    text-shadow:  1px 1px 3px cyan, .5px 2px 8px rgba(184, 4, 255, 0.966);
+   
+  }
+
+
+
+ .tabSearch label {
+    /*color: #b621e6;*/
+    color:cyan;
+    padding-top: 8px;
+    background: #363845;
+    font-weight: bold;
+    max-width: 100%;
+    /*height: 40px;*/
+    width: 100%;
+    text-align: center;
+  }
+
+  .mytabsSearchLabel input[type='radio']:checked+label+.tab {
+    display: block;
+  }
+
+  .mytabsSearchLabel input[type="radio"]:checked+label {
+    background: #464652;
+  }
+
+  .mytabs .tab {
+    padding: 2px;
+    background: #464652;
+    order: 1;
+    display: none;
+  }
+
+  .mytabs .tab h2 {
+    font-size: 3em;
+	color: white;
+  }
+
+  .mytabs input[type='radio']:checked+label+.tab {
+    display: block;
+  }
+
+  .mytabs input[type="radio"]:checked+label {
+    /*background: #0c0c0ebd;*/
+    background:#464652;
+  }
+
+
+
+  .tab{ 
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+
+/* START of images  */ 
+/*  images - floating raffle ticket signs */
+
+
+.rafflePik { 
+
+background-image: url(/raffletik3d.jpg.png);
+height:40px ;
+border-radius: 50%;
+background-color: #531a99;
+border: 3px inset #a56ee7;
+box-shadow: 4px 4px 3px 5px #a56ee7;
+position: fixed;
+ top: 25px; 
+ right: 15px;
+ transition-property:all;
+ transition-delay: .2s;
+ transition-duration: 5s;
+ transform:rotateZ(-990deg);
+
+
+  
+}
+
+
+
+.rafflePik2 { 
+
+  background-image: url(/raffletik3d.jpg.png);
+  height:80px ;
+  border-radius: 50%;
+  background-color: #531a99;
+  border: 3px inset #a56ee7;
+  box-shadow: 4px 4px 3px 5px #a56ee7;
+  position: fixed;
+ 
+   top: 25px; 
+   right: 85%;
+   
+
+   /* 2-d css  */
+  transition-property:all;
+  transition-delay: .2s;
+  transition-duration: 5s;
+  transform:rotateZ(-1880deg);
+  
+          /* ANIME  */ 
+animation-name: raffleAnimation;
+animation-duration: .5s; 
+animation-iteration-count:infinite; 
+animation-direction: alternate-reverse;
+       /*  ANIME  */ 
+
+}
+ 
+
+
+
+  .rafflePik3 { 
+
+    background-image: url(/raffletik3d.jpg.png);
+    height:45px ;
+    border-radius: 50%;
+    background-color: #531a99;
+    border: 3px inset #a56ee7;
+    box-shadow: 4px 4px 3px 5px #a56ee7;
+    position: fixed;
+   
+     top: 120px; 
+     right: 78%;
+     
+    transition-property:all;
+    transition-delay: .2s;
+    transition-duration: 2s;
+  
+/* 3-d Transformation Example  */
+    transform:rotateZ(2000deg);
+  
+
+         /* ANIME  */ 
+animation-name: raffleAnimation2;
+animation-duration: 7.5s; 
+animation-iteration-count:infinite; 
+animation-direction: alternate-reverse;
+       /*  ANIME  */ 
+
+    }
+
+
+    .rafflePik4 {             /* .rafflePik4 likes to touch the sky with his bets...   */
+
+      background-image: url(/raffletik3d.jpg.png);
+      height:50px ;
+      border-radius: 50%;
+      background-color: #531a99;
+      border: 3px inset #a56ee7;
+      box-shadow: 4px 4px 3px 5px #a56ee7;
+      position: fixed;
+     
+       top: 200px; 
+       right: 15%;
+       
+      transition-property:all;
+      transition-delay: .2s;
+      transition-duration: 5s;
+    
+        /* 2-d Transformation Example  */
+      transform:translateY(-300px);
+
+
+
+
+      }
+
+      .rafflePik5 { 
+
+        background-image: url(/raffletik3d5.png);
+        height:60px ;
+        border-radius: 50%;
+        background-color: #531a99;
+        border: 3px inset #a56ee7;
+        box-shadow: 4px 4px 3px 5px #a56ee7;
+        position: fixed;
+       
+         top: 280px; 
+         right: 85%;
+        
+         
+        
+        background: #a56ee7;
+
+        transition-property:all;
+        transition-delay: 2s;
+        transition-duration: 5s;
+
+        
+        /* 2-d Transformation Example  */
+        transform:translateZ(500px);
+        
+
+        /* ANIME  */ 
+animation-name: raffleAnimation;
+animation-duration: 3.5s; 
+animation-iteration-count:infinite; 
+animation-direction: alternate-reverse;
+       /*  ANIME  */ 
+
+        }
+
+
+
+img { background-image: linear-gradient(to right,black, #531a99);
+
+}
+
+
+.mainPic {
+  border-radius: 25% ;
+  border: solid .5px ;
+}
+
+/* Image Placement end */ 
+
+
+
+
+/* ANIME ANIME! EAT THAT CAKE THAT ANIME GO  ! */ 
+.rafflePik:hover { 
+  transform:rotateZ(340deg);
+}
+.rafflePik2:hover { 
+  transform:rotateZ(140deg);
+}
+.rafflePik3:hover { 
+  transform:rotateZ(140deg);
+}
+.rafflePik4:hover { 
+  transform:rotateX(140deg);
+}
+.rafflePik5:hover { 
+  transform:rotateZ(140deg);
+}
+
+
+@keyframes raffleAnimation {
+0% { 
+  transform:translateX(50px) ;
+  transform:rotateZ(140deg);
+}
+20% { 
+  transform:translateX(100px) ;
+  transform:rotateZ(-240deg)
+}
+40% { 
+  transform:translateX(50px) ;
+}
+60% { 
+  transform:translateX(-10px) ;
+}
+80% { 
+  transform:translateX(-50px) ;
+}
+100% { 
+  transform:translateX(-100px) ;
+}
+  
+}
+
+
+
+label:hover { 
+  text-shadow: 20rem #531a99;
+}
+
+
+
+
+
+@keyframes raffleAnimation {
+0% { 
+  transform:translateX(50px) ;
+  transform:rotateZ(140deg);
+}
+20% { 
+  transform:translateX(100px) ;
+  transform:rotateZ(-240deg)
+}
+40% { 
+  transform:translateX(50px) ;
+}
+60% { 
+  transform:translateX(-10px) ;
+}
+80% { 
+  transform:translateX(-50px) ;
+}
+100% { 
+  transform:translateX(-100px) ;
+}
+  
+}
+
+
+
+
+
+
+@keyframes raffleAnimation2 {
+0% { 
+  transform:translateX(50px) ;
+  transform:rotateZ(140deg);
+  transform:translateY(100px),translate3d(10px,20px,300px);
+}
+20% { 
+  transform:translateX(100px) ;
+  transform:rotateZ(-240deg);
+    transform:translateY(120px);
+}
+40% { 
+  transform:translateX(50px) ;
+    transform:translateY(140px);
+}
+60% { 
+  transform:translateX(-10px) ;
+    transform:translateY(160px);
+}
+80% { 
+  transform:translateX(-50px) ;
+    transform:translateY(180px);
+}
+100% { 
+  transform:translateX(-100px) ;
+    transform:translateY(200px);
+}
+  
+}
+
+
+
+
+
+
+
+/*  Animate END */ 
+
+
+
+/*  Watch your feet !      */
+
+.footerClass{ 
+  display: flex;
+  justify-content: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+/* buttons     */
+
+button{
+  border-radius: 25%;
+  padding-right: 7px;
+  margin-right: 2rem ;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+} 
+
+
+
+
+/*font styling   */
+
+@font-face { 
+        font-family: "Demo" ;
+        src: url('fonts/BeautySleepDemoRegular.ttf')
+    }
