@@ -1,0 +1,43 @@
+Here is the code to log out foo then bar back and forth 100 times, then say "hello world" every 10 seconds thereafter:
+
+
+
+
+for i in range(100):
+    if i % 2 == 0:
+        print("foo")
+    else:
+        print("bar")
+
+for i in range(100):
+    if i % 2 == 0:
+        print("bar")
+    else:
+        print("foo")
+
+while True:
+    print("hello world")
+    time.sleep(10)
+This code uses the for loop to iterate through the range of numbers from 0 to 99, and the if statement to determine which string to print. The % operator is used to determine if the current number is even or odd, and the print function is used to output the appropriate string. The while loop is used to continuously print "hello world" every 10 seconds.
+
+You can run this code in a Python shell or terminal to see the output.
+
+Note: This code will run indefinitely, so you may want to add a condition to stop the loop after a certain number of repetitions.
+
+what does time.sleep(10) do in python , and what is the proper syntax for that method ?
+
+In Python, time.sleep(10) is a function that pauses the execution of the program for 10 seconds. The time module in Python provides a function called sleep() that can be used to pause the execution of a program for a specified amount of time.
+
+The sleep() function takes one argument, which is the number of seconds to sleep. For example, time.sleep(10) pauses the execution of the program for 10 seconds.
+
+The proper syntax for the sleep() function is:
+
+
+
+
+import time
+
+time.sleep(10)
+The import time statement is used to import the time module, which contains the sleep() function. The sleep() function is then called with the argument 10, which specifies that the program should pause for 10 seconds.
+
+It's important to note that the sleep() function only pauses the execution of the program, it does not stop the program entirely. The program will continue to run in the background and will resume execution after the specified amount of time has elapsed.
