@@ -1,0 +1,27 @@
+
+
+
+
+Jupyter and Jupyter notebook are for serving files , 
+and running python and Jupyter code . Jupyter code is basically python. 
+
+TO install Jupyter and run a Jupyter server,  
+
+
+Open a terminal window. / or a command prompt window.
+- As administrator  - 
+
+Install the pip package manager if you don't have it already: type this in 
+the console  
+_____________________________
+python -m pip install --user pip
+			Install Jupyter with pip:
+__________________________
+pip install jupyter
+		Start a Jupyter server:
+jupyter notebook
+This will start a Jupyter server on your computer. You can then access the Jupyter server in a web browser by navigating to the following address:
+
+http://localhost:8888/
+The port number (8888) can be changed in the configuration file. 
+
