@@ -1,0 +1,23 @@
+
+
+
+
+A list is not hashable because it is a mutable object. A mutable object is an object whose state can be changed after it has been created. Lists are mutable because you can add, remove, and modify elements of a list after it has been created.
+
+Hashable objects, on the other hand, are immutable. Immutable objects are objects whose state cannot be changed after they have been created. For example, tuples are immutable because you cannot add, remove, or modify elements of a tuple after it has been created.
+
+Hashability is important for some Python data structures, such as sets and dictionaries. Sets and dictionaries use hash values to store and retrieve data. A hash value is a unique number that is assigned to each hashable object.
+
+If a list were hashable, then it would be possible to have two different lists with the same hash value. This would cause problems for sets and dictionaries, because they would not be able to distinguish between the two lists.
+
+Therefore, lists are not hashable to prevent problems with sets and dictionaries.
+
+Here is a simple analogy to help you understand hashability:
+
+Imagine that you have a library of books. Each book has a unique ISBN number. The ISBN number is like the hash value of the book.
+
+You can use the ISBN number to quickly find a book in the library. For example, you could look up the ISBN number of a book in a database and then go to the shelf where that book is located.
+
+If books were not unique, then you could not use the ISBN number to quickly find a book in the library. For example, if two different books had the same ISBN number, then you would not be able to use the ISBN number to distinguish between the two books.
+
+The same principle applies to hashable objects in Python. Hashable objects are unique, so you can use their hash values to quickly find and retrieve them.
